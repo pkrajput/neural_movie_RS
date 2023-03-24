@@ -1,4 +1,5 @@
-# neural_movie_RS
+# Adding Contextual Information and User Biases for Neural Network Movies Recommendations
+
 neural RS based on cosine plot similarity and top rating retreival from NeuralCF using DeepFM
 
 The first approach uses cosine plot similarity to recommend movies to users. This approach is based on the idea that movies with similar plot summaries are likely to be enjoyed by the same users. To implement this approach, we first calculate the cosine similarity between the plot summaries of all pairs of movies in the dataset. We then use this similarity matrix to recommend movies to users based on the movies they have already rated. Specifically, we use the similarity matrix to find movies that are similar to the movies the user has rated highly but that the user has not yet seen.
