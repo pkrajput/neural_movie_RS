@@ -15,19 +15,19 @@ To get started, you need to collect data from IMDb. You can use the `get_imdb_da
 This script will extract movie titles, genres, and ratings from the IMDb website.
 
 ## 2. Data Pre-processing
-Once you have collected the data, you need to preprocess it. The feature_ext.py script can be used to select the top two genres, calculate the average, 
+Once you have collected the data, you need to preprocess it. The `feature_ext.py` script can be used to select the top two genres, calculate the average, 
 standard deviation, and count by user and item. It also finds the user's favorite genre and favorite movieId.
 
 ## 3. Simple Model
 Now that you have preprocessed the data, you can build a simple matrix factorization retrieval model using neuralCF. 
-This model can be implemented using the model_retrieval.ipynb notebook.
+This model can be implemented using the `model_retrieval.ipynb` notebook.
 
 ## 4. Applied Models
 If you want to build more complex models, you can use deep learning models such as neuralCF and DeepFM. 
-These models can be implemented using the model_ranking.ipynb notebook.
+These models can be implemented using the `model_ranking.ipynb` notebook.
 
 ## 5. Testing
-Once you have built the models, you need to test and compare their efficiency. This can be done using the model_pipeline.ipynb notebook.
+Once you have built the models, you need to test and compare their efficiency. This can be done using the `model_pipeline.ipynb` notebook.
 
 
 
