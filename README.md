@@ -1,13 +1,17 @@
 # Movie Recommendations using NeuralCF and DeepFM for Warm Start Scenario
 Recommendation System Final project; Skoltech 2023
 
-For movie recommendation, we use CoFFee (Collaborative Full Feedback model) [(Frolov & Oseledets, 2016)](https://arxiv.org/abs/1607.04228) to predict top 20 recommended movies. This is a tensor base method that can apply to warm start scenerio. The data can be construct as tensor which has 3 dimensions: users, items, and ratings. This tensor will be decooomposed by Tucker decomposition and can be represent as
+For movie recommendation, we use CoFFee (Collaborative Full Feedback model) [(Frolov & Oseledets, 2016)](https://arxiv.org/abs/1607.04228) to predict top 20 recommended movies. This is a tensor base method that can apply to warm start scenerio. The data can be construct as tensor which has 3 dimensions: users, items, and ratings. This tensor will be decomposed by Tucker decomposition and can be represent as
 
 $$ 
 \mathcal{R} = \mathcal{G} \times_1 U \times_2 V \times_3 W 
 $$
 
-For predicting recommendation, higher order folding-in will be apply to the method. Let P is a matrix of a new user preferences, the data can be updated to the Tucker model and ................................
+For predicting recommendation, higher order folding-in will be apply to the method. Let $P$ is a matrix of a new user preferences, the data can be updated to the Tucker model and can compute:
+
+$$ 
+R \approx VV^{T}PWW^{T} 
+$$
 
 The second approach uses top rating retrieval using NeuralCF and DeepFM. These are neural network models that can predict movie ratings based on user and movie data. NeuralCF is a collaborative filtering model that uses a neural network to learn user and item embeddings that are used to predict ratings. DeepFM is a deep factorization machine model that combines factorization machines with neural networks to improve recommendation performance.
 
