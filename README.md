@@ -1,8 +1,10 @@
-# Adding Contextual Information and User Biases for Neural Network Movies Recommendations
+# Movie Recommendations using NeuralCF and DeepFM for Warm Start Scenario
+Recommendation System Final project; Skoltech 2023
 
-neural RS based on cosine plot similarity and top rating retreival from NeuralCF using DeepFM
+For movie recommendation, we use CoFFee (Collaborative Full Feedback model) [(Frolov & Oseledets, 2016)](https://arxiv.org/abs/1607.04228) to predict top 20 recommended movies. This is a tensor base method that can apply to warm start scenerio. The data can be construct as tensor which has 3 dimensions: users, items, and ratings. This tensor will be decooomposed by Tucker decomposition and can be represent as
+$$ \mathcal{R}=\mathcal{G} \times_1 U \times_2 V \times_3 W $$
 
-The first approach uses cosine plot similarity to recommend movies to users. This approach is based on the idea that movies with similar plot summaries are likely to be enjoyed by the same users. To implement this approach, we first calculate the cosine similarity between the plot summaries of all pairs of movies in the dataset. We then use this similarity matrix to recommend movies to users based on the movies they have already rated. Specifically, we use the similarity matrix to find movies that are similar to the movies the user has rated highly but that the user has not yet seen.
+For predicting recommendation, higher order folding-in will be apply to the method. Let P is a matrix of a new user preferences, the data can be updated to the Tucker model and ................................
 
 The second approach uses top rating retrieval using NeuralCF and DeepFM. These are neural network models that can predict movie ratings based on user and movie data. NeuralCF is a collaborative filtering model that uses a neural network to learn user and item embeddings that are used to predict ratings. DeepFM is a deep factorization machine model that combines factorization machines with neural networks to improve recommendation performance.
 
