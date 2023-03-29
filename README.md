@@ -18,7 +18,7 @@ The dataset can be downloaded by [link for download dataset](https://www.kaggle.
 To predict the top 20 recommended movies, we use Collaborative Full Feedback model (CoFFee) [(Frolov & Oseledets, 2016)](https://arxiv.org/abs/1607.04228). This is a tensor-based method that can be used in a warm-start scenario. The data can be represented as a tensor with three dimensions: users, items, and ratings. This tensor will be Tucker decomposed and can be represented as:
 
 $$ 
-\mathcal{A} = \mathcal{G} \times_1 U \times_2 V \times_3 W. 
+\mathcal{R} = \mathcal{G} \times_1 U \times_2 V \times_3 W. 
 $$
 
 Higher order folding-in will be used in the method to predict recommendations. If $P$ is is a new user preference matrix, the data can be updated to the Tucker model and can computed:
@@ -38,14 +38,14 @@ DeepFM enhances recommendation performance by combining factorization machines a
 #### 1. Data Collection and Pre-processing
 To begin, we should collect the training and testset data from Kaggle by clicking on [this link](https://www.kaggle.com/competitions/skoltech-recommender-systems-challenge-2023/data?select=training).
 
-When using ```pd.read csv``` for training data, we must remove the last row that contains a ```NaN``` value. We must preprocess deepFM before training it.
+When using ```pd.read csv``` for training data, we must remove the last row that contains a ```NaN``` value. We must preprocess the data by usinf function from `dataprep.py` before training it.
 We calculate the average, standard deviation, and rating for each user in the `deepFM train.ipynb` script. 
 
 #### 2. Model Training 
 Let us begin training the model. We use `neuralCF train.ipynb` and `deepFM.ipynb` to train the neuralCF and deepFM, respectively, and save the trained model.
 
 #### 3. Getting Recommendation
-- `folding_in.ipynb`: Following the seminar in class, we used the Collaborative Full Feedback model (CoFFee) to decompose the tensor that contained userIDs, movieIDs, and ratings. After obtaining useful information from the training data, we apply the testset to the model to obtain the top-50 recommended movies and save the result.
+- `folding_in.ipynb`: Following the seminar in class, we used the Collaborative Full Feedback model (CoFFee) to decompose the tensor that contained userIDs, movieIDs, and ratings. After obtaining useful information from the training data, we apply the testset to the model to obtain the top-50 recommended movies by using function `evaluation.py` from the seminar and save the result.
 - `top_rec_20_update.ipynb`: After running `folding_in.ipynb` and obtaining the result, we run neuralCF to obtain the top-100 recommended movies and concatenate the recommended movies without duplicated movieIDs. Following that, we use the information from these recommended movies to feed into the deepFM model, obtaining the final top-20 recommended movies.
 
 #### 4. Testing
