@@ -15,17 +15,7 @@ The dataset can be downloaded by [link for download dataset](https://www.kaggle.
 
 #### Model
 
-To predict the top 20 recommended movies, we use Collaborative Full Feedback model (CoFFee) [(Frolov & Oseledets, 2016)](https://arxiv.org/abs/1607.04228). This is a tensor-based method that can be used in a warm-start scenario. The data can be represented as a tensor with three dimensions: users, items, and ratings. This tensor will be Tucker decomposed and can be represented as:
-
-$$ 
-\mathcal{R} = \mathcal{G} \times_1 U \times_2 V \times_3 W. 
-$$
-
-Higher order folding-in will be used in the method to predict recommendations. If $P$ is is a new user preference matrix, the data can be updated to the Tucker model and can computed:
-
-$$ 
-R \approx VV^{T}PWW^{T}.
-$$
+To predict the top 20 recommended movies, we use Collaborative Full Feedback model (CoFFee) [(Frolov & Oseledets, 2016)](https://arxiv.org/abs/1607.04228). This is a tensor-based method that can be used in a warm-start scenario. 
 
 DeepFM and NeuralCF are two popular models for developing recommendation systems. To learn user and item embeddings, NeuralCF employs a neural network. This enables the model to capture user-item relationships and make personalized recommendations.
 
@@ -53,21 +43,7 @@ We check the model score after receiving the top-20 movie recommendations by sub
 
 
 ## References
-Duchi, J., Hazan, E., and Singer, Y. Adaptive subgradient methods for online learning and stochastic optimization. 2011. doi: [https://doi.org/10.48550/arXiv.1412.6980](https://doi.org/10.48550/arXiv.1412.6980).
 
-Frolov, E. and Oseledets, I. Fifty shades of ratings: How to benefit from a negative feedback in top-n recommendations tasks. 2016. doi: [http://dx.doi.org/10.1145/2959100.2959170](http://dx.doi.org/10.1145/2959100.2959170).
-
-Guo, H., Ye, T. Y., Li, Z., He, X., and Dong, Z. Deepfm: An end-to-end wide deep learning framework for ctr prediction. 2018. doi: [https://doi.org/10.48550/arXiv.1804.04950](https://doi.org/10.48550/arXiv.1804.04950).
-
-He, X., Liao, L., Zhang, H., Nie, L., Hu, X., and Chua, T.-S. Neural collaborative filtering. 2017. doi: [https://doi.org/10.48550/arXiv.1708.05031](https://doi.org/10.48550/arXiv.1708.05031).
-
-Kingma, D. P. and Ba, J. L. Adam: A method for stochastic optimization. 2017. doi: [https://doi.org/10.48550/arXiv.1412.6980](https://doi.org/10.48550/arXiv.1412.6980).
-
-Kurbiel, T. and Khaleghian, S. Training of deep neural networks based on distance measures using rmsprop. 2017. doi: [https://doi.org/10.48550/arXiv.1708.01911](https://doi.org/10.48550/arXiv.1708.01911).
-
-Rabanser, S., Shchur, O., and Gunnemann, S. Introduction to tensor decompositions and their applications in machine laerning. 2017. doi: [https://doi.org/10.48550/arXiv.1711.10781](https://doi.org/10.48550/arXiv.1711.10781).
-
-Schafer, J. B., Frankowski, D., Herlocker, J., and Sen, S. Collaborative filtering recommender systems. 2007.
 
 
 
