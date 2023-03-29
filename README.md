@@ -33,7 +33,7 @@ DeepFM enhances recommendation performance by combining factorization machines a
 
 
 
-## Step-by-step Guide to Building a Movie Recommendation System
+## Step-by-step to Building a Movie Recommendation System
 
 #### 1. Data Collection and Pre-processing
 To begin, we should collect the training and testset data from Kaggle by clicking on [this link](https://www.kaggle.com/competitions/skoltech-recommender-systems-challenge-2023/data?select=training).
@@ -52,6 +52,22 @@ Let us begin training the model. We use `neuralCF train.ipynb` and `deepFM.ipynb
 We check the model score after receiving the top-20 movie recommendations by submitting the result to [Kaggle](https://www.kaggle.com/competitions/skoltech-recommender-systems-challenge-2023/leaderboard). **NDCG** is the evaluation metric used in Kaggle to measure the quality of ranking.
 
 
+## References
+Duchi, J., Hazan, E., and Singer, Y. Adaptive subgradient methods for online learning and stochastic optimization. 2011. doi: [https://doi.org/10.48550/arXiv.1412.6980](https://doi.org/10.48550/arXiv.1412.6980).
+
+Frolov, E. and Oseledets, I. Fifty shades of ratings: How to benefit from a negative feedback in top-n recommendations tasks. 2016. doi: [http://dx.doi.org/10.1145/2959100.2959170](http://dx.doi.org/10.1145/2959100.2959170).
+
+Guo, H., Ye, T. Y., Li, Z., He, X., and Dong, Z. Deepfm: An end-to-end wide deep learning framework for ctr prediction. 2018. doi: [https://doi.org/10.48550/arXiv.1804.04950](https://doi.org/10.48550/arXiv.1804.04950).
+
+He, X., Liao, L., Zhang, H., Nie, L., Hu, X., and Chua, T.-S. Neural collaborative filtering. 2017. doi: [https://doi.org/10.48550/arXiv.1708.05031](https://doi.org/10.48550/arXiv.1708.05031).
+
+Kingma, D. P. and Ba, J. L. Adam: A method for stochastic optimization. 2017. doi: [https://doi.org/10.48550/arXiv.1412.6980](https://doi.org/10.48550/arXiv.1412.6980).
+
+Kurbiel, T. and Khaleghian, S. Training of deep neural networks based on distance measures using rmsprop. 2017. doi: [https://doi.org/10.48550/arXiv.1708.01911](https://doi.org/10.48550/arXiv.1708.01911).
+
+Rabanser, S., Shchur, O., and Gunnemann, S. Introduction to tensor decompositions and their applications in machine laerning. 2017. doi: [https://doi.org/10.48550/arXiv.1711.10781](https://doi.org/10.48550/arXiv.1711.10781).
+
+Schafer, J. B., Frankowski, D., Herlocker, J., and Sen, S. Collaborative filtering recommender systems. 2007.
 
 
 
