@@ -1,7 +1,7 @@
 # Movie Recommendations using NeuralCF and DeepFM for Warm Start Scenario
 Recommendation System Final Project: Skoltech 2023
 
-## Dataset and Model
+## Dataset and Model:
 
 #### Dataset
 
@@ -24,7 +24,7 @@ DeepFM enhances recommendation performance by combining factorization machines a
 
 
 
-## Step-by-step to Building a Movie Recommendation System
+## Step-by-step to Building a Movie Recommendation System:
 
 #### 1. Data Collection and Pre-processing
 To begin, we should collect the training and testset data from Kaggle by clicking on [this link](https://www.kaggle.com/competitions/skoltech-recommender-systems-challenge-2023/data?select=training).
@@ -43,7 +43,20 @@ Let us begin training the model. We use `neuralCF train.ipynb` and `deepFM.ipynb
 We check the model score after receiving the top-20 movie recommendations by submitting the result to [Kaggle](https://www.kaggle.com/competitions/skoltech-recommender-systems-challenge-2023/leaderboard). **NDCG** is the evaluation metric used in Kaggle to measure the quality of ranking.
 
 
-## References
+## References:
+
+https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/
+
+https://androidkt.com/concatenate-two-layers-using-keras-layers-concatenate-example/
+
+https://towardsdatascience.com/a-performant-recommender-system-without-cold-start-problem-69bf2f0f0b9b
+
+https://keras.io/api/models/model_training_apis/
+
+https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/guide/migrate/migrating_feature_columns.ipynb?hl=da#scrollTo=JsoYUUgRS7hu
+
+https://towardsdatascience.com/how-to-build-a-wide-and-deep-model-using-keras-in-tensorflow-2-0-2f7a236b5a4b
+
 
 
 
