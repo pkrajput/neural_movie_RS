@@ -17,8 +17,7 @@ The dataset can be downloaded by [link for download dataset](https://www.kaggle.
 
 To predict the top 20 recommended movies, we use Collaborative Full Feedback model (CoFFee) [(Frolov & Oseledets, 2016)](https://arxiv.org/abs/1607.04228). This is a tensor-based method that can be used in a warm-start scenario. 
 
-DeepFM[(Guo, H., Ye, T. Y., Li, Z., He, X., and Dong, Z.)](https://arxiv.org/pdf/1804.04950.pdf) and NeuralCF[(He, X., Liao, L., Zhang, H., Nie, L., Hu, X., and Chua,
-T.-S)](https://arxiv.org/pdf/1708.05031.pdf) are two popular models for developing recommendation systems. To learn user and item embeddings, NeuralCF employs a neural network. This enables the model to capture user-item relationships and make personalized recommendations.
+DeepFM[(Guo Huifeng et al., 2018)](https://arxiv.org/pdf/1804.04950.pdf) and NeuralCF[(He Xiandnan et al., 2017)](https://arxiv.org/pdf/1708.05031.pdf) are two popular models for developing recommendation systems. To learn user and item embeddings, NeuralCF employs a neural network. This enables the model to capture user-item relationships and make personalized recommendations.
 
 DeepFM enhances recommendation performance by combining factorization machines and neural networks. Factorization machines are a popular technique for modeling the interactions between features such as user preferences and item attributes in recommendation systems.
 
