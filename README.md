@@ -7,7 +7,7 @@ Recommendation System Final Project; Skoltech 2023
 
 We used data from the Kaggle competition: Skoltech Recommendation System Challenge 2023, which provides two types of datasets: training and testset. There are four columns: `userid` and `itemid` columns, which correspond to int64 userIDs and itemIDs, respectively, `timestamp` column, which corresponds to int64 unix timestamps, and `rating` column, which has float64 values. The rating scale has 0.5 increments ranging from 0.5 to 5.0. 
 
-- Training: there are 127,282 userIDs and 18,264 movieIDs.
+- Training: there are 71,297 userIDs and 17,092 movieIDs.
 - Testset: there are 2,963 userIDs and 17,102 movieIDs.
 
 The dataset can be downloaded by [link for download dataset](https://www.kaggle.com/competitions/skoltech-recommender-systems-challenge-2023/data?select=training).
